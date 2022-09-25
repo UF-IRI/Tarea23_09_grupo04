@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\libreria",
+    "\\main",
+    "\\unit-test"
   ],
   "PreviewInSolutionExplorer": false
 }

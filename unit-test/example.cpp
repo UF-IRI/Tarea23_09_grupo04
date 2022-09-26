@@ -90,4 +90,4 @@ TEST(Distancia, 3)
 	ASSERT_THAT(Distancia(punto1, punto2), 3.02);
 	delete[]punto1;
 	delete[]punto2;
-}
+} 

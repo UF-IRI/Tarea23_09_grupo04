@@ -13,14 +13,15 @@ namespace foobar::tests
 }
 TEST(area_circulo, 1) 
 {
-	int radio = 2;
+	float radio = 2;
 	float* area = new float;
 	area_circulo(radio,area);
-	ASSERT_THAT((*area), Eq(99));
+	EXPECT_NE((*area), 99);
+	delete area;
 }
 TEST(area_circulo, 2)
 {
-	int radio = 0;
+	float radio = 0;
 	float* area = new float;
 	area_circulo(radio, area);
 	ASSERT_THAT((*area), Eq(0));
@@ -36,9 +37,21 @@ TEST(area_circulo, 3)
 }
 TEST(area_circulo, 4)
 {
-	int radio = 0;
+	float radio = 0;
 	float* area = new float;
 	area_circulo(radio, area);
-	delete area;
 	ASSERT_THAT((*area), 0);
+	delete area;
+	
 }
+
+TEST(area_circulo, 5)
+{
+	float radio = 0;
+	float* area = new float;
+	area_circulo(radio, area);
+	EXPECT_EQ((*area), 0);
+	delete area;
+	
+}
+

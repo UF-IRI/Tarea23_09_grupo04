@@ -55,3 +55,39 @@ TEST(area_circulo, 5)
 	
 }
 
+TEST(Distancia, 1)
+{
+	float* punto1 = new float[2];
+	float* punto2 = new float[2];
+	punto1[0] = 0;
+	punto1[1] = 0;
+	punto2[0] = 0;
+	punto2[1] = 0;
+	ASSERT_THAT(Distancia(punto1, punto2), 0);
+	delete []punto1;
+	delete []punto2;
+}
+TEST(Distancia, 2)
+{
+	float* punto1 = new float[2];
+	float* punto2 = new float[2];
+	punto1[0] = -1;
+	punto1[1] = -2;
+	punto2[0] = -3;
+	punto2[1] = -4;
+	ASSERT_THAT(Distancia(punto1, punto2), 2.83);
+	delete[]punto1;
+	delete[]punto2;
+}
+TEST(Distancia, 3)
+{
+	float* punto1 = new float[2];
+	float* punto2 = new float[2];
+	punto1[0] = 1.2;
+	punto1[1] = 0.5;
+	punto2[0] = -0.5;
+	punto2[1] = 3;
+	ASSERT_THAT(Distancia(punto1, punto2), 3.02);
+	delete[]punto1;
+	delete[]punto2;
+}

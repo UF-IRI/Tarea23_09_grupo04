@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\libreria",
+    "\\unit-test"
   ],
-  "SelectedNode": "\\C:\\Users\\Usuario\\Source\\Repos\\Tarea23_09_grupo04",
+  "SelectedNode": "\\unit-test\\example.cpp",
   "PreviewInSolutionExplorer": false
 }

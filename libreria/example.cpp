@@ -1,13 +1,13 @@
 #include "example.h"
-float area_circulo(float radio) {
+void area_circulo(float radio, float* area) 
+{
     float const PI = 3.14;
-    float area = 0;
 
-    area = PI * (radio * radio);
-
+    *area = PI * (radio * radio);
 
 
-    return area;
+
+    return;
 }
 namespace foobar
 {

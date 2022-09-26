@@ -5,8 +5,7 @@
 
 int main(int argc, char** argv)
 {
-    foobar::Example example{};
-    std::cout << "Example.getValue() => " << example.getValue() << std::endl;
+   //llamamos a las funciones
 
     return EXIT_SUCCESS;
 }

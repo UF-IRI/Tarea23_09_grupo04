@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void area_circulo(float radio, float* radio );
+void area_circulo(float radio, float* area );
 
 namespace foobar
 {

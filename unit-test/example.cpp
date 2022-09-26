@@ -18,7 +18,7 @@ TEST(area_circulo, 1)
 	area_circulo(radio,area);
 	ASSERT_THAT((*area), Eq(99));
 }
-TEST(area_circulo, 1)
+TEST(area_circulo, 2)
 {
 	int radio = 0;
 	float* area = new float;
@@ -26,7 +26,7 @@ TEST(area_circulo, 1)
 	ASSERT_THAT((*area), Eq(0));
 	delete area;
 }
-TEST(area_circulo, 2)
+TEST(area_circulo, 3)
 {
 	int radio = 5;
 	float* area = new float;
@@ -34,7 +34,7 @@ TEST(area_circulo, 2)
 	ASSERT_THAT((*area), 78.5);
 	delete area;
 }
-TEST(area_circulo, 3)
+TEST(area_circulo, 4)
 {
 	int radio = 0;
 	float* area = new float;

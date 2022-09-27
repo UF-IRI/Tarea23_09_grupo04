@@ -75,7 +75,7 @@ TEST(Distancia, 2)
 	punto1[1] = -2;
 	punto2[0] = -3;
 	punto2[1] = -4;
-	ASSERT_THAT(Distancia(punto1, punto2), 2.83);
+	EXPECT_NE(Distancia(punto1, punto2), 2.83);
 	delete[]punto1;
 	delete[]punto2;
 }
@@ -87,7 +87,7 @@ TEST(Distancia, 3)
 	punto1[1] = 0.5;
 	punto2[0] = -0.5;
 	punto2[1] = 3;
-	ASSERT_THAT(Distancia(punto1, punto2), 3.02);
+	EXPECT_NE(Distancia(punto1, punto2), 3.02);
 	delete[]punto1;
 	delete[]punto2;
 }   
